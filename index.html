@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AromaCup — Уютная кофейня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">☕ AromaCup</a>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn btn-header" id="orderBtn">Заказать кофе</button>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Идеальное утро начинается с AromaCup</h1>
+            <p>Свежеобжаренное зерно, уютная атмосфера и бариста, которые знают толк в настоящем кофе.</p>
+            <a href="#menu" class="btn">Смотреть меню</a>
+        </div>
+    </section>
+
+    <!-- Блок О нас -->
+    <section id="about" class="about container">
+        <h2>Почему выбирают нас?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>100% Арабика</h3>
+                <p>Тщательно отбираем зерна премиум-класса из Эфиопии и Бразилии.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Свежая выпечка</h3>
+                <p>Каждое утро выпекаем круассаны и десерты на собственной кухне.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Уютный интерьер</h3>
+                <p>Идеальное место для работы с ноутбуком или встреч с друзьями.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Меню -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Популярные напитки</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">☕</div>
+                    <h3>Эспрессо</h3>
+                    <p>Классический крепкий кофе с плотной пенкой крема.</p>
+                    <span class="price">150 ₽</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">🥛</div>
+                    <h3>Капучино</h3>
+                    <p>Эспрессо с нежной и пышной молочной пенкой.</p>
+                    <span class="price">220 ₽</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">🍯</div>
+                    <h3>Раф Кофе</h3>
+                    <p>Кофейно-сливочный напиток с добавлением ванильного сахара.</p>
+                    <span class="price">260 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (Контакты) -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <p>📍 ул. Кофейная, д. 10 | 📞 +7 (999) 123-45-67</p>
+            <p>&copy; 2026 AromaCup. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно заказа -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Быстрый заказ</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <select required>
+                    <option value="">Выберите напиток</option>
+                    <option value="espresso">Эспрессо</option>
+                    <option value="cappuccino">Капучино</option>
+                    <option value="raf">Раф Кофе</option>
+                </select>
+                <button type="submit" class="btn">Отправить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
